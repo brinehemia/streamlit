@@ -1,0 +1,287 @@
+{
+    "students": [
+      {
+        "name": "Ahmad Pratama",
+        "scores": {
+          "Januari": {
+            "Matematika": 80,
+            "Fisika": 75,
+            "Bahasa Indonesia": 85,
+            "Sosiologi": 78,
+            "Kesenian": 90
+          },
+          "Februari": {
+            "Matematika": 82,
+            "Fisika": 77,
+            "Bahasa Indonesia": 88,
+            "Sosiologi": 80,
+            "Kesenian": 92
+          },
+          "Maret": {
+            "Matematika": 84,
+            "Fisika": 78,
+            "Bahasa Indonesia": 90,
+            "Sosiologi": 81,
+            "Kesenian": 89
+          },
+          "April": {
+            "Matematika": 79,
+            "Fisika": 80,
+            "Bahasa Indonesia": 87,
+            "Sosiologi": 83,
+            "Kesenian": 91
+          },
+          "Mei": {
+            "Matematika": 85,
+            "Fisika": 82,
+            "Bahasa Indonesia": 86,
+            "Sosiologi": 85,
+            "Kesenian": 88
+          },
+          "Juni": {
+            "Matematika": 81,
+            "Fisika": 79,
+            "Bahasa Indonesia": 89,
+            "Sosiologi": 84,
+            "Kesenian": 90
+          }
+        }
+      },
+      {
+        "name": "Budi Santoso",
+        "scores": {
+          "Januari": {
+            "Matematika": 76,
+            "Fisika": 80,
+            "Bahasa Indonesia": 82,
+            "Sosiologi": 79,
+            "Kesenian": 88
+          },
+          "Februari": {
+            "Matematika": 78,
+            "Fisika": 83,
+            "Bahasa Indonesia": 85,
+            "Sosiologi": 81,
+            "Kesenian": 87
+          },
+          "Maret": {
+            "Matematika": 80,
+            "Fisika": 79,
+            "Bahasa Indonesia": 84,
+            "Sosiologi": 80,
+            "Kesenian": 86
+          },
+          "April": {
+            "Matematika": 77,
+            "Fisika": 82,
+            "Bahasa Indonesia": 81,
+            "Sosiologi": 82,
+            "Kesenian": 90
+          },
+          "Mei": {
+            "Matematika": 79,
+            "Fisika": 81,
+            "Bahasa Indonesia": 83,
+            "Sosiologi": 83,
+            "Kesenian": 89
+          },
+          "Juni": {
+            "Matematika": 82,
+            "Fisika": 84,
+            "Bahasa Indonesia": 87,
+            "Sosiologi": 84,
+            "Kesenian": 91
+          }
+        }
+      },
+      {
+        "name": "Citra Dewi",
+        "scores": {
+          "Januari": {
+            "Matematika": 85,
+            "Fisika": 78,
+            "Bahasa Indonesia": 90,
+            "Sosiologi": 85,
+            "Kesenian": 89
+          },
+          "Februari": {
+            "Matematika": 87,
+            "Fisika": 79,
+            "Bahasa Indonesia": 88,
+            "Sosiologi": 83,
+            "Kesenian": 88
+          },
+          "Maret": {
+            "Matematika": 86,
+            "Fisika": 80,
+            "Bahasa Indonesia": 87,
+            "Sosiologi": 84,
+            "Kesenian": 87
+          },
+          "April": {
+            "Matematika": 88,
+            "Fisika": 81,
+            "Bahasa Indonesia": 89,
+            "Sosiologi": 86,
+            "Kesenian": 90
+          },
+          "Mei": {
+            "Matematika": 85,
+            "Fisika": 82,
+            "Bahasa Indonesia": 91,
+            "Sosiologi": 85,
+            "Kesenian": 92
+          },
+          "Juni": {
+            "Matematika": 87,
+            "Fisika": 83,
+            "Bahasa Indonesia": 89,
+            "Sosiologi": 86,
+            "Kesenian": 91
+          }
+        }
+      },
+      {
+        "name": "Dian Purnama",
+        "scores": {
+          "Januari": {
+            "Matematika": 78,
+            "Fisika": 81,
+            "Bahasa Indonesia": 83,
+            "Sosiologi": 80,
+            "Kesenian": 85
+          },
+          "Februari": {
+            "Matematika": 80,
+            "Fisika": 79,
+            "Bahasa Indonesia": 85,
+            "Sosiologi": 82,
+            "Kesenian": 87
+          },
+          "Maret": {
+            "Matematika": 81,
+            "Fisika": 83,
+            "Bahasa Indonesia": 84,
+            "Sosiologi": 81,
+            "Kesenian": 86
+          },
+          "April": {
+            "Matematika": 82,
+            "Fisika": 84,
+            "Bahasa Indonesia": 86,
+            "Sosiologi": 85,
+            "Kesenian": 88
+          },
+          "Mei": {
+            "Matematika": 79,
+            "Fisika": 82,
+            "Bahasa Indonesia": 83,
+            "Sosiologi": 84,
+            "Kesenian": 89
+          },
+          "Juni": {
+            "Matematika": 83,
+            "Fisika": 85,
+            "Bahasa Indonesia": 87,
+            "Sosiologi": 85,
+            "Kesenian": 90
+          }
+        }
+      },
+      {
+        "name": "Eka Saputra",
+        "scores": {
+          "Januari": {
+            "Matematika": 85,
+            "Fisika": 87,
+            "Bahasa Indonesia": 88,
+            "Sosiologi": 84,
+            "Kesenian": 86
+          },
+          "Februari": {
+            "Matematika": 83,
+            "Fisika": 85,
+            "Bahasa Indonesia": 87,
+            "Sosiologi": 83,
+            "Kesenian": 85
+          },
+          "Maret": {
+            "Matematika": 86,
+            "Fisika": 84,
+            "Bahasa Indonesia": 89,
+            "Sosiologi": 85,
+            "Kesenian": 84
+          },
+          "April": {
+            "Matematika": 87,
+            "Fisika": 88,
+            "Bahasa Indonesia": 85,
+            "Sosiologi": 87,
+            "Kesenian": 87
+          },
+          "Mei": {
+            "Matematika": 88,
+            "Fisika": 89,
+            "Bahasa Indonesia": 86,
+            "Sosiologi": 88,
+            "Kesenian": 89
+          },
+          "Juni": {
+            "Matematika": 90,
+            "Fisika": 90,
+            "Bahasa Indonesia": 88,
+            "Sosiologi": 89,
+            "Kesenian": 88
+          }
+        }
+      },
+      {
+        "name": "Fitri Lestari",
+        "scores": {
+          "Januari": {
+            "Matematika": 76,
+            "Fisika": 75,
+            "Bahasa Indonesia": 82,
+            "Sosiologi": 80,
+            "Kesenian": 78
+          },
+          "Februari": {
+            "Matematika": 78,
+            "Fisika": 76,
+            "Bahasa Indonesia": 83,
+            "Sosiologi": 82,
+            "Kesenian": 80
+          },
+          "Maret": {
+            "Matematika": 79,
+            "Fisika": 77,
+            "Bahasa Indonesia": 84,
+            "Sosiologi": 81,
+            "Kesenian": 79
+          },
+          "April": {
+            "Matematika": 81,
+            "Fisika": 79,
+            "Bahasa Indonesia": 85,
+            "Sosiologi": 83,
+            "Kesenian": 81
+          },
+          "Mei": {
+            "Matematika": 80,
+            "Fisika": 78,
+            "Bahasa Indonesia": 86,
+            "Sosiologi": 82,
+            "Kesenian": 83
+          },
+          "Juni": {
+            "Matematika": 82,
+            "Fisika": 80,
+            "Bahasa Indonesia": 87,
+            "Sosiologi": 84,
+            "Kesenian": 82
+          }
+        }
+      }
+    ]
+  }
+  

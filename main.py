@@ -1,52 +1,34 @@
 import streamlit as st
-import pandas as pd
-import json
+import json as json
+from views import dashboard, component_a, component_upload
 from streamlit_option_menu import option_menu
+from services.auth import AuthManager
 
-with st.sidebar:
-    selected = option_menu('Learn Streamlit', ['Dashboard', 'Component Test A', 'Component Test B'], 
-        icons=['house', 'gear', 'gear'], menu_icon="cast", default_index=0)
-    
-#Dashboard Page
-if (selected == "Dashboard") :
-    with open("data.json", "r") as file:
-        dataSiswa = json.load(file)
+auth_manager = AuthManager()
 
-    rows = []
-    for siswa in dataSiswa["students"]:
-        name = siswa["name"]
-        for month, scores in siswa["scores"].items():
-            row = {"Name": name, "Month": month}
-            row.update(scores)
-            rows.append(row)
+if not auth_manager.is_authenticated():
+    st.title('Login')
+    username = st.text_input('Username')
+    password = st.text_input('Password', type='password')
 
-    df = pd.DataFrame(rows)
-    df.index = df.index + 1
-    df.index.name = "No"
+    if st.button('Login'):
+        if auth_manager.login(username, password):
+            st.success('Login berhasil!')
+            st.rerun()
+else:
+    with st.sidebar:
+        selected = option_menu('Streamlit Test', ['Dashboard', 'Component A', 'Component Upload'], 
+        icons=['house', 'gear', 'upload'], menu_icon=None, default_index=0)
 
-    df["Month"] = pd.Categorical(df["Month"], categories=["Januari", "Februari", "Maret", "April", "Mei", "Juni"], ordered=True)
-
-    average = df.groupby("Month")[["Matematika", "Fisika", "Bahasa Indonesia", "Sosiologi", "Kesenian"]].mean()
-
-    st.title("Daftar Nilai Kelas")
-    st.dataframe(df)
-
-    st.subheader("Nilai rata-rata bulanan")
-    st.line_chart(average)
-
-    st.subheader("Nilai rata-rata bulanan (Bar Chart)")
-    st.bar_chart(average)
-
-    
-
-#Component Test A Page
-if (selected == "Component Test A") : 
-    st.title('Component Test A')
-    panjang = st.number_input ('Masukkan nilai panjang', 0)
-    lebar = st.number_input('Masukkan nilai lebar', 0)
-
-    hitung = st.button('Hitung')
-
-    if hitung :
-        luas = panjang * lebar
-        st.write('Luas pesergi panjang adalah =', luas)
+    # menu
+    if selected == 'Dashboard':
+        dashboard() 
+    elif selected == 'Component A':
+        component_a()
+    elif selected == 'Component Upload':
+        component_upload()
+   
+    # Button Logout
+    if st.sidebar.button('Logout'):
+        auth_manager.logout()
+        st.rerun()
