@@ -1,17 +1,16 @@
 import requests
 from decouple import config
-from services.cookies import cookiesManager
+from streamlit_cookies_controller import CookieController
+controller = CookieController()
 
 class ApiClient:
     def __init__(self, base_url=None, cookies_manager=None):
         self.base_url = base_url or config("BASE_URL")
-        self.cookies_manager = cookies_manager or cookiesManager 
+        self.cookies_manager = controller 
         self.token = self.get_token_from_cookie()
 
     def get_token_from_cookie(self):
-        if self.cookies_manager.ready():
-            return self.cookies_manager.get("jwt_token")
-        return None
+        return self.cookies_manager.get("jwt_token")
 
     def request(self, method, endpoint, data=None, files=None, auth_required=True):
         url = f"{self.base_url}{endpoint}"

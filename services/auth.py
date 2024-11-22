@@ -1,13 +1,13 @@
 import requests
 import streamlit as st
 from decouple import config
-from services.cookies import cookiesManager
+from streamlit_cookies_manager import CookieManager
 
 class AuthManager:
     def __init__(self, base_url=None):
         self.base_url = base_url or config("BASE_URL")
         self.jwt_token = None
-        self.cookies = cookiesManager
+        self.cookies = CookieManager()
 
     def login(self, username, password):
         url = f"{self.base_url}auth/login"
